@@ -1,5 +1,6 @@
 package me.darkolythe.multitoolu;
 
+import org.bstats.bukkit.Metrics;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.event.Listener;
@@ -45,6 +46,8 @@ public class MultitoolU extends JavaPlugin implements Listener {
         Bukkit.getPluginManager().registerEvents(multitoolInventory, this);
         Bukkit.getPluginManager().registerEvents(multitoolToolDetect, this);
         getCommand("multitoolu").setExecutor(new MultitoolCommand());
+
+        Metrics metrics = new Metrics(plugin, 10268);
 
         System.out.println(prefix + ChatColor.GREEN + "MultitoolU enabled!");
     }

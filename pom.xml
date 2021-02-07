@@ -6,7 +6,7 @@
 
     <groupId>me.Darkolythe</groupId>
     <artifactId>MultitoolU</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <packaging>jar</packaging>
 
     <properties>
@@ -36,7 +36,7 @@
         <dependency>
             <groupId>org.bstats</groupId>
             <artifactId>bstats-bukkit</artifactId>
-            <version>1.5</version>
+            <version>1.8</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>

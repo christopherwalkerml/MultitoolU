@@ -1,0 +1,28 @@
+name: MultitoolU
+version: 1.0.0
+author: Darkolythe
+main: me.darkolythe.multitoolu.MultitoolU
+api-version: 1.13
+description: This plugin allows the use of multiple tools in one item, and switches them automatically based on what's being hit
+
+commands:
+  multitoolu:
+    usage: /<command> [open / give]
+    aliases: [mtu]
+    description: the main MultitoolU command
+    permission: multitoolu.command
+    permission-message: You do not have permission!
+
+permissions:
+  multitoolu.use:
+    description: Allows the use of a multitoolu
+    default: op
+  multitoolu.command:
+    description: Allows the use of multitoolu commands
+    default: op
+  multitoolu.*:
+    description: Wildcard permission
+    default: op
+    children:
+      multitoolu.use: true
+      multitoolu.command: true

@@ -1,0 +1,18 @@
+#This is the multitool config
+
+
+# TRANSLATION OPTIONS
+#####################################################################################################
+
+nopermission: "%prefix% You do not have permission to do that!"
+
+mtoinv: "&9Multitools"
+lore: "&9&lMultitool-U"
+msgempty: "%prefix%&cThe Multitool is empty!"
+msgnospace: "%prefix%&cThere's no space in your inventory!"
+msggiven: "%prefix%&aYou have been given your multitool!"
+msgnopermission: "%prefix%&cYou do not have permission to do that!"
+
+
+#%prefix% = [prefix] before the message
+prefix: "&f&l[&9&lMultitoolU&f&l] "

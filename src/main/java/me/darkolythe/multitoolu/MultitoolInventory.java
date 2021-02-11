@@ -91,8 +91,6 @@ public class MultitoolInventory implements Listener {
         toolMap.put("PICKAXE", 1);
         toolMap.put("AXE", 2);
         toolMap.put("SHOVEL", 3);
-        toolMap.put("HOE", 4);
-        toolMap.put("SHEARS", 5);
 
         if (event.getClickedInventory() != null) { //if the user clicks an inventory
             if (player.getOpenInventory().getTopInventory().getType() == InventoryType.HOPPER) {
@@ -141,7 +139,7 @@ public class MultitoolInventory implements Listener {
                                 if (type.contains("FEATHER")) {
                                     boolean forloop = false;
                                     ItemStack genstack = null;
-                                    for (int i = 0; i < 9; i++) { //this loops through the mt inv, and gives the player the first multitool that shows up
+                                    for (int i = 0; i < 5; i++) { //this loops through the mt inv, and gives the player the first multitool that shows up
                                         if (MultitoolU.tools.getItem(i) != null) {
                                             Material curmat = MultitoolU.tools.getItem(i).getType();
                                             forloop = false;

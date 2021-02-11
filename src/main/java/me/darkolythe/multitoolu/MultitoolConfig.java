@@ -2,6 +2,7 @@ package me.darkolythe.multitoolu;
 
 import net.md_5.bungee.api.ChatColor;
 import org.bukkit.Bukkit;
+import org.bukkit.Material;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -29,7 +30,12 @@ public class MultitoolConfig {
             Object identifier = toolscfg.get("tools");
             if (identifier instanceof List) {
                 List<?> temp = toolscfg.getList("tools");
+                int index = 0;
                 for (Object o : temp) {
+                    if (o == null || ((ItemStack)o).getType() == Material.AIR) {
+                        o = main.placeholders.get(index);
+                    }
+                    index++;
                     inv.addItem((ItemStack) o);
                 }
             }

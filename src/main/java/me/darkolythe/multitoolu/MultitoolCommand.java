@@ -30,6 +30,7 @@ public class MultitoolCommand implements CommandExecutor {
 				sender.sendMessage(MultitoolU.messages.get("msgnopermission"));
 			}
 		}
+		sender.sendMessage(main.prefix + "You cannot use that command as the console.");
 		return true;
 	}
 }
